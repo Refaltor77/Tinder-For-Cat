@@ -1,0 +1,117 @@
+body{
+  background-image: linear-gradient(45deg, #ffbbff, rgba(245, 202, 13, 0.533));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-container{
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+}
+
+#logo{
+  width: 90px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin: 7px;
+  border-radius: 10px;
+  border: 2px solid rgba(4, 5, 0, 0.267);
+  font-size: 1.2rem;
+  outline: none;
+}
+
+input[type=submit]{
+  border: none;
+  background-image: linear-gradient(45deg, rgba(255, 0, 200, 0.333), rgba(255, 212, 237, 0.333));
+  text-transform: uppercase;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .23);
+  transition: 0.3s;
+}
+
+input[type=submit]:hover{
+  cursor: pointer;
+  background-image: linear-gradient(45deg, rgba(255, 0, 200, 0.333), transparent);
+  background-color: rgb(255, 143, 221);
+}
+
+#loader{
+  width: 120px;
+  height: 120px;
+  border: 5px solid rgb(255, 255, 255);
+  border-top: 5px solid rgb(255, 169, 238);
+  border-radius: 100%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#match img {
+  width: 100%;
+}
+
+#match h2 {
+  color: white;
+  text-align: center;
+}
+
+#card {
+  background-color: rgb(255, 28, 179);
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
+.imgProfil {
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 450px;
+  background-color: white;
+}
+
+.nav{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#like {
+  background-color: white;
+  padding: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 1px solid;
+  color: rgb(255, 0, 149);
+
+}
+
+#run {
+  background-color: white;
+  padding: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 1px solid;
+  color: rgb(255, 0, 0);
+}
